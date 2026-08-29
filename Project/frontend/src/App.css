@@ -1,0 +1,347 @@
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.container {
+    width: 92%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   INPUT SECTION
+========================================= */
+
+.input-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.help-text {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   FILE UPLOAD
+========================================= */
+
+.file-upload {
+    margin-bottom: 20px;
+}
+
+.file-upload label {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #374151;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.file-upload label:hover {
+    background: #1f2937;
+}
+
+.file-upload input {
+    display: block;
+    margin-top: 10px;
+}
+
+.file-upload p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.history-button {
+    background: #374151;
+}
+
+.history-button:hover {
+    background: #1f2937;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+}
+
+
+/* =========================================
+   PERFORMANCE
+========================================= */
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.performance-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.performance-card span {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.performance-card strong {
+    font-size: 26px;
+}
+
+
+/* =========================================
+   PERFORMANCE CHART
+========================================= */
+
+.chart-container {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.results {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #f9fafb;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f9fafb;
+}
+
+.url {
+    max-width: 280px;
+    word-break: break-all;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.up {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status.down {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .stats-grid,
+    .performance-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 25px 0;
+    }
+
+    .stats-grid,
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .chart-container {
+        padding: 15px;
+    }
+
+}
